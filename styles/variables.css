@@ -1,10 +1,6 @@
 :root {
     --main-font-family: Inter, sans-serif;
     --accent-font-family: 'Press Start 2P', fantasy;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
     --main-background: #fff;
     --accent-color: #000;
     --title-font-weight: "wght" 700;
@@ -15,20 +11,4 @@
     --image-text-color: #fff;
     --color-button-text: #fff;
     --color-heart: #ff0000;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --main-background: #000;
-        --accent-color: #00CC14;
-        --title-font-weight: "wght" 785;
-        --text-font-weight: "wght" 465;
-        --background-color: var(--main-background);
-        --background-color-first: #007F0C;
-        --background-color-second: #004306;
-        --image-text-color: #000;
-        --color-button-text: #00CC14;
-        --color-heart: #ff0000;
-    }
 }
