@@ -29,3 +29,18 @@
     --color-button-text: #00CC14;
     --color-heart: #ff0000;
 }
+
+@media (prefers-color-scheme: light) {
+    :root {
+    --main-background: #fff;
+    --accent-color: #000;
+    --title-font-weight: "wght" 700;
+    --text-font-weight: "wght" 400;
+    --background-color: #d3d3d3;
+    --background-color-first: #E7E7E7;
+    --background-color-second: #1A1A1A;
+    --image-text-color: #fff;
+    --color-button-text: #fff;
+    --color-heart: #ff0000;
+    }
+}
