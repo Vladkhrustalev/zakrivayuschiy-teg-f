@@ -109,6 +109,15 @@
 .theme-menu__button:hover {
   opacity: .6;
 }
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  font-size: 15px;
+}
+
 
 .cards {
   display: flex;
@@ -146,7 +155,7 @@
 
 
 @supports (text-stroke: 1px var(--image-text-color)) or (-webkit-text-stroke: 1px var(--image-text-color)) {
-  .image-label {
+  .image-text {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--image-text-color);
     text-stroke: 1px var(--image-text-color);
@@ -338,7 +347,7 @@
   position: relative;
   display: flex;
   margin: 0 auto 80px;
-  width: 340px;
+  width: 335px;
   height: 55px;
   align-items: center;
   justify-content: center;
@@ -382,7 +391,7 @@
   border: 2px solid var(--accent-color);
 }
 
-.modal-window__inner {
+.modal-window_open {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -503,4 +512,18 @@ dialog::backdrop {
     border-top: 2px solid var(--accent-color);
   }
 
+  .modal-window__text {
+  display: contents;
+  line-height: 1.5;
+  max-width: 234px;
+  width: 100%;
+  }
+  .wrapper {
+    gap: 19px;
+  }
+ .image-text {
+  right: 5px;
+ }
+
 }
+
