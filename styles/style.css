@@ -110,12 +110,12 @@
   opacity: .6;
 }
 .theme-menu__button:focus-visible::after {
-  transform: scaleX(1);
+  width: 100%;
 }
 
 .theme-menu__button:focus {
   outline: none;
-  font-size: 15px;
+  opacity: .6;
 }
 
 
@@ -396,6 +396,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.dialog:not([open]) {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .wrapper {
